@@ -55,16 +55,20 @@ Note: Install pip and other general software necessary on the rapsberry pi clien
 
 ## Usage
 
+
+
 ### Server
 
-Run the server on the Ubuntu VM:
+To run the server on the Ubuntu VM:
+
+Modify the server.py code to your required strategy and configure the IP address where you would like to host the server and run the code using below command.
 
 ```bash
 python server.py
 ```
 ### Clients
 
-Run the client code on each Raspberry Pi:
+Based on your requirement/experiment, run the client.py or differentialprivacy_client.py on each Raspberry Pi:
 
 #### Standard Client
 
@@ -74,7 +78,7 @@ python client.py
 #### Differential Privacy Client
 
 ```bash
-python differentialprivacy_client.py
+python dp_client.py
 ```
 ## Configuration of Hyper parameters
 
