@@ -6,15 +6,15 @@ This repository contains code for implementing federated learning on embedded de
 
 ## Requirements
 
-- Raspberry Pis (Atleast 2 - any number of clients as per your requirement.)
+- Raspberry Pis (At least 2 - any number of clients as per your requirement.)
 - Ubuntu Linux VM (for the server)
-- Python 3.x
+- Python 3. x
 - Flower framework
 
 ## Hardware Setup
 
 ### 1. Server
-Any device or laptop can be configured to be a server but I used Oracle VM Virtual box to create an Ubuntu Virtual Machine as Flower offers better compatibility and support.
+Any device or laptop can be configured to be a server. Still, I used the Oracle VM Virtual box to create an Ubuntu Virtual Machine as Flower offers better compatibility and support.
 
 Follow this link to set up an Ubuntu VM: https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox#1-overview
 
@@ -22,19 +22,19 @@ After creating the VM, open or free a port on which the server can be hosted. In
 
 ### 2. Client
 
-Set up the Raspberry Pis with Ubuntu Server of your preferred version using Raspberry Pi Imager.
+Set up the Raspberry Pis with the Ubuntu Server of your preferred version using Raspberry Pi Imager.
 
 Follow this tutorial link for setup: https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
 
-I used Ubuntu Server 22.04.3 LTS(64bit) version for all my clients.
+I used the Ubuntu Server 22.04.3 LTS(64bit) version for all my clients.
 
-Note: Avoid using Ubuntu Desktop on Raspberry Pi as it occupies more storage and might lead to memory issues for Federated Learning.
+Just so you know, avoid using Ubuntu Desktop on Raspberry Pi as it occupies more storage and might lead to memory issues for Federated Learning.
 
 ## Setup Python Virtual Environment and install dependencies.
 
-1. Setup a Python Virtual environment in the server adn the clients.
+1. Set up a Python Virtual environment in the server and the clients.
 
-Follow this tutorial to setup a virtual environment for your project: https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
+Follow this tutorial to set up a virtual environment for your project: https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/
 
 2. Clone the repository in the project folder where you have the Virtual Environment for both server and Raspberry Pi devices.
 
@@ -51,7 +51,7 @@ cd federated-learning-embedded
 ```bash
 pip install -r requirements.txt
 ```  
-Note: Install pip and other general software necessary on the rapsberry pi clients if they are not pre-installed with Ubuntu OS.
+Note: Install pip and other general software necessary on the Raspberry Pi clients if not pre-installed with Ubuntu OS.
 
 ## Usage
 
@@ -80,7 +80,7 @@ python client.py
 ```bash
 python dp_client.py
 ```
-## Configuration of Hyper parameters
+## Configuration of Hyperparameters
 
 The below hyperparameters are consistent across the experiments and these can be modified as required.
 
